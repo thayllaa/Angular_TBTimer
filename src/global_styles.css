@@ -1,7 +1,12 @@
 /* Add application styles & imports to this file! */
-h1, h3 {
+h1 {
   font-family: 'Times New Roman', Times, serif;
   text-align: center;
+  color: purple;
+}
+
+h3 {
+  font-family: 'Times New Roman', Times, serif;
   color: purple;
 }
 
