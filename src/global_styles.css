@@ -1,4 +1,6 @@
 /* Add application styles & imports to this file! */
 h1, h2 {
   font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  color: purple;
 }
