@@ -7,7 +7,7 @@ let acao = '-';
 let ciclo = 0;
 let tempo = 5;
 
-function restart() {
+function startTabata() {
 let intervalId = setInterval(() => {
   if (ciclo < 1) acao = 'Preparar!';
   else if (ciclo > 8 ) acao = "Sessão concluída com sucesso!";
@@ -36,5 +36,5 @@ let intervalId = setInterval(() => {
 }
 
 document.getElementById(`restart-btn`).addEventListener(`click`, () => {
-  restart();
+  startTabata();
 });
