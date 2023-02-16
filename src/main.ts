@@ -34,3 +34,7 @@ let intervalId = setInterval(() => {
   }
 }, 100);
 }
+
+document.getElementById(`restart-btn`).addEventListener(`click`, () => {
+  restart();
+});
