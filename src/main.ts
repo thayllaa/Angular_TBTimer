@@ -1,16 +1,11 @@
 import 'zone.js/dist/zone';
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { bootstrapApplication } from '@angular/platform-browser';
 
-@Component({
-  selector: 'my-app',
-  standalone: true,
-  imports: [CommonModule],
-  template: ``,
-})
-export class App {
-  name = '';
-}
+let title = "Tabata Timer";
+document.getElementById('app').innerHTML = title;
 
-bootstrapApplication(App);
+let acao = '-';
+let ciclo = 0;
+let tempo = 5;
+let intervalId = setInterval(() => {
+  if (ciclo < 1) acao = 'Preparar!'
+});
