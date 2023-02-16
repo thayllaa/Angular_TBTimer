@@ -33,8 +33,8 @@ let intervalId = setInterval(() => {
     tempo = 30;
   }
 }, 100);
-}
 
 document.getElementById(`restart-btn`).addEventListener(`click`, () => {
   startTabata();
 });
+}
