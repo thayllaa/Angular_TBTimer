@@ -19,7 +19,6 @@ function startTabata() {
   } else {
     document.getElementById('ciclo').innerHTML = '-';
   }
-
   if (ciclo <= 8) {
     document.getElementById('tempo').innerHTML = tempo.toString();
   } else {
