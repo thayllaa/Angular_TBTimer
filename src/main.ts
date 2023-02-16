@@ -26,7 +26,7 @@ let intervalId = setInterval(() => {
   else if (ciclo > 8 ) acao = "Sessão concluída com sucesso!";
   else if (tempo > 10) acao = "Comece o exercício!";
   else acao = "Você pode descansar (=";
-  document.getElementById(acao).innerHTML = acao;
+  document.getElementById('acao').innerHTML = acao;
 
   if (ciclo >= 1 && ciclo <= 8) {
     document.getElementById('ciclo').innerHTML = ciclo.toString();
