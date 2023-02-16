@@ -40,9 +40,9 @@ let intervalId = setInterval(() => {
     document.getElementById('tempo').innerHTML = '-';
   }
 
-  tempo = tempo + 1;
+  tempo -= 1;
   if (tempo == 0) {
-    ciclo = ciclo + 1;
+    ciclo += 1;
     tempo = 30;
   }
 }, 100);
