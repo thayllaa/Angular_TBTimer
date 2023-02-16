@@ -1,17 +1,16 @@
 import 'zone.js/dist/zone';
 
-let title = "Tabata Timer";
+let title = 'Tabata Timer';
 document.getElementById('app').innerHTML = title;
 let acao = '-';
 let ciclo = 0;
 let tempo = 5;
 
-function startTabata() {
-  let intervalId = setInterval(() => {
+let intervalId = setInterval(() => {
   if (ciclo < 1) acao = 'Preparar!';
-  else if (ciclo > 8) acao = "Sessão concluída com sucesso!";
-  else if (tempo > 10) acao = "Comece o exercício!";
-  else acao = "Você pode descansar (=";
+  else if (ciclo > 8) acao = 'Sessão concluída com sucesso!';
+  else if (tempo > 10) acao = 'Comece o exercício!';
+  else acao = 'Você pode descansar (=';
   document.getElementById('acao').innerHTML = acao;
 
   if (ciclo >= 1 && ciclo <= 8) {
@@ -30,9 +29,4 @@ function startTabata() {
     ciclo += 1;
     tempo = 30;
   }
-
-  document.getElementById(`restart-btn`).addEventListener(`click`, () => {
-    startTabata();
-  });
 }, 100);
-}
