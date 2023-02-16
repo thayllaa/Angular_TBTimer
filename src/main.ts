@@ -1,4 +1,19 @@
 import 'zone.js/dist/zone';
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { bootstrapApplication } from '@angular/platform-browser';
+
+@Component({
+  selector: 'my-app',
+  standalone: true,
+  imports: [CommonModule],
+  template: ``,
+})
+export class App {
+  name = 'Temporizador Tabata ';
+}
+
+bootstrapApplication(App);
 
 let title = "Tabata Timer";
 document.getElementById('app').innerHTML = title;
@@ -6,7 +21,7 @@ document.getElementById('app').innerHTML = title;
 let acao = '-';
 let ciclo = 0;
 let tempo = 5;
-let restartTimer = setInterval(() => {
+let intervalId = setInterval(() => {
   if (ciclo < 1) acao = 'Preparar!';
   else if (ciclo > 8 ) acao = "Sessão concluída com sucesso!";
   else if (tempo > 10) acao = "Comece o exercício!";
