@@ -29,4 +29,4 @@ let intervalId = setInterval(() => {
     ciclo += 1;
     tempo = 30;
   }
-}, 100);
+}, 1000);
