@@ -1,7 +1,6 @@
 import 'zone.js/dist/zone';
 
-function restartTimer() {
-  let title = 'Tabata Timer';
+let title = 'Tabata Timer';
   document.getElementById('app').innerHTML = title;
   let acao = '-';
   let ciclo = 0;
@@ -30,4 +29,7 @@ function restartTimer() {
       tempo = 30;
     }
   }, 100);
+
+function restartTimer() {
+  
 }
