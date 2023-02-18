@@ -28,9 +28,14 @@ let intervalId = setInterval(() => {
     ciclo += 1;
     tempo = 30;
   }
+}, 1000);
 
-  document.getElementById('restartTimer').onclick = function() {restartTimer()};
-  function restartTimer() {
-      restartTimer();
+document.getElementById('restartTimer').onclick = function () {
+  restartTimer();
+};
+
+function restartTimer() {
+  if (ciclo > 8) {
+    restartTimer();
   }
-}, 100);
+}
