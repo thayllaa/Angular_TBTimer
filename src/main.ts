@@ -24,7 +24,7 @@ let intervalId = setInterval(() => {
   } else {
     document.getElementById('tempo').innerHTML = '-';
   }
-  
+
   tempo -= 1;
   if (tempo == 0) {
     ciclo += 1;
