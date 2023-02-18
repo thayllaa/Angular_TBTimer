@@ -31,8 +31,6 @@ let intervalId = setInterval(() => {
 
   document.getElementById('restartTimer').onclick = function() {restartTimer()};
   function restartTimer() {
-    if (ciclo > 8) {
       restartTimer();
-    }
   }
 }, 100);
