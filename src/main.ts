@@ -35,4 +35,4 @@ let intervalId = setInterval(() => {
       restartTimer();
     }
   }
-}, 1000);
+}, 100);
