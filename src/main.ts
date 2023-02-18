@@ -5,6 +5,7 @@ document.getElementById('app').innerHTML = title;
 let acao = '-';
 let ciclo = 0;
 let tempo = 5;
+let counter = -10;
 
 let intervalId = setInterval(() => {
   if (ciclo < 1) acao = 'Preparar!';
@@ -23,6 +24,10 @@ let intervalId = setInterval(() => {
     document.getElementById('tempo').innerHTML = tempo.toString();
   } else {
     document.getElementById('tempo').innerHTML = '-';
+  }
+
+  function restartTimer() {
+    this.counter = -10;
   }
 
   tempo -= 1;
