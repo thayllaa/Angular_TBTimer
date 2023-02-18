@@ -10,7 +10,6 @@ let counter = -10;
 let intervalId = setInterval(() => {
   if (ciclo < 1) acao = 'Preparar!';
   else if (ciclo > 8) acao = 'Sessão concluída com sucesso!';
-  //else if (ciclo > 8) acao = `restart-btn`;
   else if (tempo > 10) acao = 'Comece o exercício!';
   else acao = 'Você pode descansar (=';
   document.getElementById('acao').innerHTML = acao;
