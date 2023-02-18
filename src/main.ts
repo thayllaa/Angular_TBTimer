@@ -28,6 +28,11 @@ let intervalId = setInterval(() => {
     ciclo += 1;
     tempo = 30;
   }
-}, 1000);
 
-function restartTimer() {}
+  document.getElementById('restartTimer').onclick = function() {restartTimer()};
+  function restartTimer() {
+    if (ciclo > 8) {
+      restartTimer();
+    }
+  }
+}, 1000);
